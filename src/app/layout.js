@@ -1,10 +1,25 @@
 import localFont from "next/font/local";
 import "./globals.css";
 
-const hankenGroteskBold = localFont({
-  src: "./fonts/static/HankenGrotesk-Bold.woff",
-  variable: "--font-hanken-grotesk-Bold",
-  weight: "700",
+const hankenGrotesk = localFont({
+  src: [
+      {
+          path: "./fonts/static/HankenGrotesk-ExtraBold.woff",
+          weight: "800",
+          style: "normal",
+      },
+      {
+          path: "./fonts/static/HankenGrotesk-Bold.woff",
+          weight: "700",
+          style: "normal",
+      },
+      {
+          path: "./fonts/static/HankenGrotesk-Medium.woff",
+          weight: "500",
+          style: "normal",
+      }
+  ],
+  variable: '--font-hanken-grotesk',
 });
 
 export const metadata = {
@@ -17,7 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${hankenGroteskBold.variable} antialiased`}
+        className={`${hankenGrotesk.variable} font-sans antialiased`}
       >
         {children}
       </body>
