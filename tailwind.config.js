@@ -30,6 +30,7 @@ module.exports = {
       },
       fontSize: {
         "3xl": "32px",
+        "5.5xl": "56px",
       },
       borderRadius: {
         '4xl': '32px',
@@ -38,6 +39,7 @@ module.exports = {
         '8.5': '35px',
         '9': '38px',
         '13': '54px',
+        '15': '58px',
       },
       maxWidth: {
         '2.5xl': '736px'

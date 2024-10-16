@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${hankenGrotesk.variable} font-sans antialiased bg-very-light-blue text-lg flex justify-center items-center h-screen`}
+        className={`${hankenGrotesk.variable} font-sans antialiased bg-very-light-blue text-base sm:text-lg sm:flex sm:justify-center sm:items-center sm:h-screen`}
       >
         {children}
       </body>
